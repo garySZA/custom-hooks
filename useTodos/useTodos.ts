@@ -1,6 +1,11 @@
 import { useEffect, useReducer } from "react";
-import { todoReducer } from "../08-useReducer/todoReducer";
-import { Todo } from "../types";
+import { todoReducer } from "./todoReducer";
+
+interface Todo {
+    id: number;
+    todo: string;
+    done: boolean
+}
 
 const initialState: Todo[] = [
     // {
